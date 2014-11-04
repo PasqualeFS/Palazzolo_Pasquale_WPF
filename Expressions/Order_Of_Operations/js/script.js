@@ -8,5 +8,20 @@ var quiz4 = 80;
 
 // the average is the sum of the items divided by the number of items
 
-var average = quiz1 + quiz2 + quiz3 + quiz4/4;
-console.log(average); 
+//var average = quiz1 + quiz2 + quiz3 + quiz4/4;
+//console.log(average);
+// The result of the above ended up being too high.
+
+/* Need to use PEMDAS to achieve the correct result. PEMDAS is:
+Parenthesis
+Exponents
+Multiplication
+Division
+Addition
+Subtraction
+in that exact order!
+ */
+
+var average = (quiz1 + quiz2 + quiz3 + quiz4)/4;
+// This ensures the items in parenthesis are added first then divided at the end. It follows the rule of PEMDAS
+console.log(average);
