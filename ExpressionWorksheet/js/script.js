@@ -39,4 +39,5 @@ console.log(pizzaResult);
  */
 
 var remainingPizza = pizzasOrdered * slicesPerPie % partyRSVPS;
-console.log(remainingPizza);
+var sparkyEats = "Sparky got " + remainingPizza + " slices of pizza.";
+console.log(sparkyEats);
