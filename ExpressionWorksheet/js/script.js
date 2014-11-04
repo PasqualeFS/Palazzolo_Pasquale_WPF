@@ -41,3 +41,20 @@ console.log(pizzaResult);
 var remainingPizza = pizzasOrdered * slicesPerPie % partyRSVPS;
 var sparkyEats = "Sparky got " + remainingPizza + " slices of pizza.";
 console.log(sparkyEats);
+
+/* PROBLEM 4: Average Shopping Bill
+ You are budgeting your money for the year and must calculate your average weekly grocery
+ shopping spending over the past five weeks. Store the past five grocery totals as a list in an array.
+ Create an expression that will use the items in the array to calculate the average amount spent on groceries.
+
+ Please note: there should only be one given for this problem set, the array holding the five weekly totals.
+ You should be able to access the array using the array access notation discussed earlier in the course.
+ */
+
+
+
+/* PROBLEM 5: Discounts
+ Calculate the discounted price for an item. Create an expression that will calculate the discounted
+ price with and without sales tax.
+ (It is acceptable for the result to have more than two digits after the decimal. $345.896 for example.)
+ */
