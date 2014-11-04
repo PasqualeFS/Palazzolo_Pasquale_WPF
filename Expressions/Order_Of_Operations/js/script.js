@@ -25,3 +25,10 @@ in that exact order!
 var average = (quiz1 + quiz2 + quiz3 + quiz4)/4;
 // This ensures the items in parenthesis are added first then divided at the end. It follows the rule of PEMDAS
 console.log(average);
+
+
+var length = 7;
+var width= 6;
+var perimeter = length *2 + width * 2;
+console.log(perimeter);
+// Since multiplication comes first in PEMDAS, parenthesis aren't needed to achieve the correct result.
