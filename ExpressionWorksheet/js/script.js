@@ -17,3 +17,14 @@ var dogYearsMultiplier = 7; // Dogs age 7 years for every human year.  This will
 var result = "Sparky is " + humanYears + " human years old which is " + humanYears * dogYearsMultiplier + " in dog years.";
 // The line above includes strings, proper spacing, integration of the variables and multiplication of variables where needed.
 console.log(result); // This should print the result of 21 to the console when browser testing.
+
+/* PROBLEM 2: Slice of Pie Part I
+ A bunch of students are having a party and somebody ordered pizza.
+ Create an expression that calculates how much pizza each party goer will get at the party.
+ (Assume all pizzas have the same number of slices and that the person dividing the pizza is
+ really precise, so this can be a decimal, like 3.52 slices, etc.)
+ */
+
+var slicesPerPie = 12; // This states that each pizza pie has 12 slices
+var partyRSVPS = 18 // This states that 18 people are attending this party
+
