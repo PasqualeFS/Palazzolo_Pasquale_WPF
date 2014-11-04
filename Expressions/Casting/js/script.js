@@ -10,5 +10,5 @@ var areaCode = 407;
 var firstPart = 555;
 var lastPart = 1234;
 
-var phoneNo = areaCode + firstPart + lastPart; // this will add three variables together instead of concatenating
+var phoneNo = String(areaCode) + String(firstPart) + String(lastPart); // this will now concatenate three variables
 console.log(phoneNo); // prints to the console
