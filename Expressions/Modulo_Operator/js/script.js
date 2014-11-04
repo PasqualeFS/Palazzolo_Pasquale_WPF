@@ -1,6 +1,6 @@
 // Expressions - Modulo Operator
 
-/* 
+/*
 var remainder = 32 / 10; // declared variable as 32 divided by 10
 console.log(remainder); // printed in console. This did not show us the remainder
 */
