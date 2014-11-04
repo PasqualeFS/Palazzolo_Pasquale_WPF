@@ -54,7 +54,8 @@ console.log(sparkyEats);
 var groceryTotals = [56.67, 68.75, 55.88, 62.41, 72.99];
 var groceryAverage = groceryTotals[0] + groceryTotals[1] + groceryTotals[2] + groceryTotals[3] + groceryTotals[4];
 var averageWeeklySpending = groceryAverage / 5;
-console.log(averageWeeklySpending);
+var averagePerWeek = "You have spent a total of $" + groceryAverage + " on groceries over 5 weeks. That is an average of $" + averageWeeklySpending + " per week"
+console.log(averagePerWeek);
 
 /* PROBLEM 5: Discounts
  Calculate the discounted price for an item. Create an expression that will calculate the discounted
