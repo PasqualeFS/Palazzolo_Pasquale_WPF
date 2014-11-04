@@ -62,3 +62,14 @@ console.log(averagePerWeek);
  price with and without sales tax.
  (It is acceptable for the result to have more than two digits after the decimal. $345.896 for example.)
  */
+
+var originalPrice = 255.88;
+var discountPercentage = 35;
+var itemDescription = "Black Tuxedo";
+var salesTax = .07;
+var amountOff = originalPrice * .35;
+var totalNoTax = originalPrice - amountOff;
+var calculateTax = (originalPrice - amountOff) * salesTax;
+var totalWithTax = totalNoTax + calculateTax;
+var discountTotal = "Your " + itemDescription + " was originally $" + originalPrice + ", but after a " + discountPercentage + "% discount, it is now $" + totalNoTax + " without tax, and $" + totalWithTax + " with tax."
+console.log(discountTotal);
