@@ -30,3 +30,13 @@ var slicesPerPie = 12; // This states that each pizza pie has 12 slices
 var partyRSVPS = 18; // This states that 18 people are attending this party
 var pizzaResult = "Each person ate " + pizzasOrdered * slicesPerPie / partyRSVPS + " slices of pizza at the party.";
 console.log(pizzaResult);
+
+
+/* PROBLEM 3: Slice of Pie Part II
+ At the pizza party Sparky, the host’s dog is excited, because he gets
+ the leftover pizza after the slices have been divided up evenly among the guests.
+ Assume guests get whole slices, how many whole slices will Sparky feast on?
+ */
+
+var remainingPizza = pizzasOrdered * slicesPerPie % partyRSVPS;
+console.log(remainingPizza);
