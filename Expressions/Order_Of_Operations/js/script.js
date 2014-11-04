@@ -8,5 +8,5 @@ var quiz4 = 80;
 
 // the average is the sum of the items divided by the number of items
 
-var average = quiz1 + quiz2 + quiz3 + quiz4;
-console.log(average);
+var average = quiz1 + quiz2 + quiz3 + quiz4/4;
+console.log(average); 
