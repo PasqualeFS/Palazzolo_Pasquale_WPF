@@ -28,5 +28,5 @@ console.log(dogResult); // This should print the result of 21 to the console whe
 var pizzasOrdered = 10; // This states that 10 pizzas were ordered by somebody
 var slicesPerPie = 12; // This states that each pizza pie has 12 slices
 var partyRSVPS = 18; // This states that 18 people are attending this party
-var pizzaResult = "Each person ate " + (pizzasOrdered * slicesPerPie) / partyRSVPS + " slices of pizza at the party.";
+var pizzaResult = "Each person ate " + pizzasOrdered * slicesPerPie / partyRSVPS + " slices of pizza at the party.";
 console.log(pizzaResult);
