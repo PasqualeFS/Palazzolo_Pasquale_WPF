@@ -6,5 +6,8 @@ var isStudent = false; // Boolean Variable
 
 var firstName = "Pasquale"; // This is my name
 
-var phrase = 'You can\'t do that. \n Try using an escape character instead'; // By adding the backslash, it tells the machine to ignore the single quote that follows.
+var phrase = 'You can\'t do that. \nTry using an escape character instead'; // By adding the backslash, it tells the machine to ignore the single quote that follows.
 // This ensures that the single quote of punctuation won't accidentally end the string.
+
+console.log(firstName);
+console.log(phrase);
