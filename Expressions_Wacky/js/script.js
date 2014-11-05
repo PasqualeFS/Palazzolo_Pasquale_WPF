@@ -1,1 +1,1 @@
-// This is for my Wacky Expressions assignment
+// This is the Javascript for my Wacky Expressions assignment
