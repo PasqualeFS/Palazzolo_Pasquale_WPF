@@ -8,14 +8,16 @@ var headCount = prompt("You chose tickets at a cost of $" + perPerson + " per pe
 
 var taxAmount = prompt("What is the sales tax in your area?\nPlease enter a whole number. No decimals."); // This line stores the sales tax amount entered by the user
 
-var taxCalculation = headCount * perPerson * taxAmount/100; // This line turns the tax rate into a decimal and calculates the amount of tax on the total price
+var storageArray = [perPerson, headCount, taxAmount]; // This stores all of the user data in one place
 
-var subtotal = headCount * perPerson; // This line multiplies the cost per person times the amount of people going.
+var taxCalculation = storageArray[0] * storageArray[1] * storageArray[2]/100; // This line pulls the data out of the array, turns the tax rate into a decimal and calculates the amount of tax on the total price
 
-var totalCost = headCount * perPerson + taxCalculation;
+var subtotal = storageArray[0] * storageArray[1]; // This line multiplies the cost per person times the amount of people going.
+
+var totalCost = subtotal + taxCalculation;
 
 var displayTotal = ("The subtotal for " + headCount + " tickets is $" + subtotal + "." + "\nThe sales tax amount is " + taxAmount + "%.\n\nYour total cost equals $" + totalCost); // This creates a string concatenated with the relevant variables
 
 alert(displayTotal); // This displays the information for the user
 
-console.log (displayTotal); // This displays the information in the console (for assignment purposes only)
+console.log(displayTotal); // This displays the information in the console (for assignment purposes only)
