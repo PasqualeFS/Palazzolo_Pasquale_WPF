@@ -1,3 +1,4 @@
 // JS file to go along with Prompts & Alerts Screencast
 
-prompt();
+var userInput = prompt("Enter your year of birth:");
+console.log(userInput);
