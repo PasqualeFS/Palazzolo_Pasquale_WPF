@@ -1,7 +1,7 @@
 // This goes with the Conditionals Example Screencast
 // Conditionals Logic
 
-var oldEnough = true;
+var oldEnough = false;
 
 // if the child is old enough, print to the console "you can ride!"
 if(oldEnough){
