@@ -1,6 +1,6 @@
 // JS for Condition with Expressions Screencast
 
-var kidHeight = 30;
+var kidHeight = 47;
 var minHeight = 48;
 
 // if the child is old enough, print to the console "you can ride!"
