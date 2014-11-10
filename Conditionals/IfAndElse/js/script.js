@@ -1,6 +1,6 @@
 // Goes with the If and Else Screencast
 
-var kidHeight = 50;
+var kidHeight = 48;
 var minHeight = 48;
 
 
@@ -10,6 +10,6 @@ if(kidHeight > minHeight){
     // code performed if condition is true
     console.log("You can ride the coaster!");
 }
-if (kidHeight < minHeight){
+if (kidHeight <= minHeight){
     console.log("Sorry, kid! You've got some growing to do first!");
 }
