@@ -1,7 +1,7 @@
 // For Logical Operators Screencast
 
 var budget = 300;
-var iPhonePrice = 199.99;
+var iPhonePrice = 499.99;
 var wonLottery = true;
 
 // if the price of the phone is less than our budget AND if the paycheck is over 300
