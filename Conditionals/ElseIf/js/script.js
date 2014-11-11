@@ -1,6 +1,6 @@
 // Goes with the Else If Screencast
 
-var kidHeight = prompt("What is your height?");
+var kidHeight = 52;
 var minHeight = 48;
 var wParentHeight = 45; // the height of the kid with the parent
 
