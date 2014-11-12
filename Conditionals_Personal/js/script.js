@@ -1,3 +1,2 @@
-/**
- * Created by OldPatman on 11/10/14.
- */
+// This file goes with my Personal Conditional Calculator
+
