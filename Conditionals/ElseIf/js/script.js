@@ -1,5 +1,5 @@
 // Goes with the Else If Screencast
-
+alert("test");
 var kidHeight = 52;
 var minHeight = 48;
 var wParentHeight = 45; // the height of the kid with the parent
