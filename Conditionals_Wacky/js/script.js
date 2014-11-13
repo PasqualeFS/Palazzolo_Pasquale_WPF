@@ -1,3 +1,2 @@
-/**
- * Created by OldPatman on 11/10/14.
- */
+// This script file is part of the Conditionals: Wacky assignment
+
