@@ -9,17 +9,31 @@ alert("Good morning, " + yourName + "! Daryl had to take the day off.\n\nHis dog
 // This variable stores the amount of email jobs in the work queue
 var emailJobs = 32;
 
-// This variable will hold the result of the ternary operator below.
-var work;
 
 //This shows how much I'm working on
 var myJobs = 8;
 
 // This variable states the amount of jobs and prompts the user asking what amount of work they currently have.
-var yourJobs = prompt("There are currently " + emailJobs + " jobs in the queue. How many jobs are you currently working on?");
+var yourJobs = prompt("There are currently " + emailJobs + " jobs in the queue. I currently have " + myJobs + " items to work on. How many jobs are you currently working on?");
 
-// This ternary operator checks to see if the user has less tasks than I do. If they have more, I'll take on the bulk.  If they have less, they can work on a few more.
-work = (yourJobs < myJobs) ? "You have less tasks than me. Take a few more from the queue please." : "That\'s a lot. You have more tasks than me. Don\'t stress! I\'ll take the bulk of the work today.";
+// This variable takes myWork, applies casting to yourWork so it acts as a number and the current queue amount and adds them together.
+var totalJobs = myJobs + Number(yourJobs) + emailJobs;
 
-alert(work); // This alerts the user with one of the ternary operator results.
-console.log(work); // This prints the ternary operator result to the console.
+// This variable uses the modulo operator to determine if there is a remainder once the totalJobs variable is divided by 2.
+var remainingJobs = totalJobs % 2;
+
+
+// This ternary operator checks to see if the user has less tasks than I do. A result is chosen based on whether the user has more or less than the number in myJobs.
+work = (yourJobs < myJobs) ? "You have less tasks than I do." : "You have more tasks than I do.";
+
+// This alerts the user with one of the ternary operator results.
+alert(work);
+
+// This variable stores concatenates the following string combined with several of the variables above.
+var splitTasks = "Let's split up the work. Your " + yourJobs + " tasks plus my " + myJobs + " tasks plus the " + emailJobs + " already in the queue totals " + totalJobs + ". \n\nIf we each take half of the tasks, then there will be " + remainingJobs + " left for Daryl when he returns to work!\n\nLet's do this!";
+
+// This alert displays the splitTasks variable to the user.
+alert(splitTasks);
+
+// This console.log prints the splitTasks variable to the console.
+console.log(splitTasks);
