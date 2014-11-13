@@ -1,3 +1,1 @@
-/**
- * Created by OldPatman on 11/10/14.
- */
+// This goes along with the Conditionals: Industry Calculator assignment
