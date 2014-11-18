@@ -9,3 +9,6 @@ function functionName() {
 
  */
 
+function outptMsg(){
+    console.log("Hello World");
+}
