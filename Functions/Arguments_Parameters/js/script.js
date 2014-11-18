@@ -12,9 +12,10 @@ function funcName (parameter1, parameter2){
 }
  */
 
-calcArea();
+calcArea(30, 20);
 
-function calcArea(){
+// Since 30 is the first argument, it's going to be stored in the "w" parameter. 20 will be stored in the "h" parameter
+function calcArea(w, h){
     var area = w * h;
     console.log(area);
 }
