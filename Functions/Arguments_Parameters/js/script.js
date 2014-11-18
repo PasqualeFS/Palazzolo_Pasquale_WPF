@@ -30,4 +30,4 @@ function dogYears(humanAge){
 dogYears(4);
 dogYears(18);
 var age3 = 12; // You can also pass a variable as an argument.  Create the variable first.
-dogYears(age3); // Use the variable as an argument by adding it between the parentheses.  
+dogYears(age3); // Use the variable as an argument by adding it between the parentheses.
