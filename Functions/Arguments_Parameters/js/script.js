@@ -12,6 +12,8 @@ function funcName (parameter1, parameter2){
 }
  */
 
+calcArea();
+
 function calcArea(){
     var area = w * h;
     console.log(area);
