@@ -10,7 +10,7 @@ funcName (argument1, argument2);
 function funcName (parameter1, parameter2){
     //Code the function runs
 }
- */
+
 
 calcArea(30, 20);
 
@@ -18,4 +18,12 @@ calcArea(30, 20);
 function calcArea(w, h){
     var area = w * h;
     console.log(area);
+}
+
+ */
+
+function dogYears(){
+    var humanAge = 4;
+    var dogYears = humanAge * 7;
+    console.log("Sparky is " + dogYears + " years old.");
 }
