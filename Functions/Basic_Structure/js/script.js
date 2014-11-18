@@ -20,3 +20,6 @@ function calcArea(){
     console.log(area);
 }
 
+// The above functions won't run unless they are invoked or called.  Just type the function with parentheses to run it.
+
+calcArea();
