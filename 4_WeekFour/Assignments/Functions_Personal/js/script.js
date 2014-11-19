@@ -1,14 +1,20 @@
+
 /* This JS is for Pasquale Palazzolo's Personal Function Calculator */
 
-alert("If the console is not already open, please open\nit and refresh before we begin"); //This alert tells the user to open the console for their browser
+//This alert tells the user to open the console for their browser
+alert("If the console is not already open, please open\nit and refresh before we begin");
 
-alert("With all the farm to table restaurants popping up, it seems like a good choice\nto grow your own herbs instead of buying them from a purveyor.\n\nWe've purchased a box for planting an herb garden but need to figure out if\nyou have enough counter space to hold it.\n\n"); // This alert sets up the personal story for the calculator
+// This alert sets up the personal story for the calculator
+alert("With all the farm to table restaurants popping up, it seems like a good choice\nto grow your own herbs instead of buying them from a purveyor.\n\nWe've purchased a box for planting an herb garden but need to figure out if\nyou have enough counter space to hold it.\n\n");
 
-var counterWidth = prompt("What is the width of your counter space in inches?"); // This asks the user for a width
+// This asks the user for a width
+var counterWidth = prompt("What is the width of your counter space in inches?");
 
-var counterLength = prompt("What is the length of your counter space in inches?"); // This asks the user for a length
+// This asks the user for a length
+var counterLength = prompt("What is the length of your counter space in inches?");
 
-var counterPerimeter = Number(counterWidth) + Number(counterWidth) + Number(counterLength) + Number(counterLength); // This calculates the perimeter based on user entries.
+// This calculates the perimeter based on user entries.
+var counterPerimeter = Number(counterWidth) * 2 + Number(counterLength) * 2;
 
 if (counterLength < counterWidth){ //This checks to see if the length is shorter than the width and alerts the user
     alert("A width that exceeds your length? That's a bit odd but the perimeter is " + counterPerimeter + " inches.\n\n")
@@ -17,9 +23,7 @@ if (counterLength < counterWidth){ //This checks to see if the length is shorter
 } else { //This alerts the user if the length is greater than the width and they are not equal.
     alert("Great! The perimeter of your counter space is " + counterPerimeter + " inches.\n\n")
 }
-
 alert("Now that we've established the " + counterPerimeter + " inch perimeter of your counter\nwe need to see if the herb garden box will fit.\n\n");
-
 
 //This is an anonymous function to calculate the area of the herb box
 var herbBoxArea = function(width, length){
@@ -36,14 +40,16 @@ var herbBoxPerimeter = function(width, length){
 //The next two lines invoke both functions
 var storeBoxArea = herbBoxArea(4, 8);
 var storeBoxPerimeter = herbBoxPerimeter(4,8);
+var boxBigger = storeBoxPerimeter - counterPerimeter;
+var boxSmaller = counterPerimeter - storeBoxPerimeter;
 
 //console.log(storeBoxPerimeter);
 //console.log(storeBoxArea);
 
 if (storeBoxPerimeter > counterPerimeter) {
-    console.log("Too Big");
+    console.log("Since the box we bought has a perimeter of " + storeBoxPerimeter + " it exceeds the counterspace by " + boxBigger + " inches and won't fit well on the counter.");
 } else if (storeBoxPerimeter === counterPerimeter) {
-    console.log("It's a perfect fit");
+    console.log("The box fits perfectly on the counter");
 } else {
-    ("It fits with room to spare");
+    console.log("The box fits with room to spare");
 }
