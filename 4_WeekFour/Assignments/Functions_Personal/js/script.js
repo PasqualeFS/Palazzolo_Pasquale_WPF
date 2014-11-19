@@ -21,3 +21,29 @@ if (counterLength < counterWidth){ //This checks to see if the length is shorter
 alert("Now that we've established the " + counterPerimeter + " inch perimeter of your counter\nwe need to see if the herb garden box will fit.\n\n");
 
 
+//This is an anonymous function to calculate the area of the herb box
+var herbBoxArea = function(width, length){
+    var boxArea = width * length;
+    return boxArea;
+}
+
+//This is an anonymous function to calculate the perimeter of the herb box
+var herbBoxPerimeter = function(width, length){
+    var boxPerimeter = width * 2 + length * 2;
+    return boxPerimeter;
+}
+
+//The next two lines invoke both functions
+var storeBoxArea = herbBoxArea(4, 8);
+var storeBoxPerimeter = herbBoxPerimeter(4,8);
+
+//console.log(storeBoxPerimeter);
+//console.log(storeBoxArea);
+
+if (storeBoxPerimeter > counterPerimeter) {
+    console.log("Too Big");
+} else if (storeBoxPerimeter === counterPerimeter) {
+    console.log("It's a perfect fit");
+} else {
+    ("It fits with room to spare");
+}
