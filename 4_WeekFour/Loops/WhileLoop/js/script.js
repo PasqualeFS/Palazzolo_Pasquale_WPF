@@ -1,8 +1,9 @@
 /* While Loops */
 
-var b = 10;
+var b = 50; // sets up the index
 
-if (b > 0){
-    console.log(b);
+while (b > 0){ // checks the condition
+    console.log(b + " kegs on the wall");
+    b--; //Increments or decrements the index
 }
 
