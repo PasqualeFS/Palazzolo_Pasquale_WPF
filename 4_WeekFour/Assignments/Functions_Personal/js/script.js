@@ -7,3 +7,10 @@ var counterLength = prompt("What is the length of your counter space in inches?"
 
 var counterPerimeter = Number(counterWidth) + Number(counterWidth) + Number(counterLength) + Number(counterLength);
 
+if (counterLength < counterWidth){
+    alert("Sorry.  Your length needs to equal or exceed your width. Please refresh your browser and start again")
+} else if (counterLength === counterWidth) {
+    alert("Ahh, a square shaped counter space.\n\nThe perimeter of your square counter is " + counterPerimeter + " inches.\n\nLet's proceed.")
+} else {
+    alert("Great!  The perimeter of your counter space is " + counterPerimeter + " inches.");
+}
