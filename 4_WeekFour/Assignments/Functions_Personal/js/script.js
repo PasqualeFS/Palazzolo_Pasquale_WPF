@@ -43,13 +43,15 @@ var storeBoxPerimeter = herbBoxPerimeter(4,8);
 var boxBigger = storeBoxPerimeter - counterPerimeter;
 var boxSmaller = counterPerimeter - storeBoxPerimeter;
 
-//console.log(storeBoxPerimeter);
-//console.log(storeBoxArea);
+alert("That box we bought for the herbs has a total area of " + storeBoxArea + " inches squared.\nWe calculated the perimeter of the box to be " + storeBoxPerimeter + " inches.");
 
 if (storeBoxPerimeter > counterPerimeter) {
+    alert("Since the box we bought has a perimeter of " + storeBoxPerimeter + " it exceeds the counterspace by " + boxBigger + " inches and won't fit well on the counter.");
     console.log("Since the box we bought has a perimeter of " + storeBoxPerimeter + " it exceeds the counterspace by " + boxBigger + " inches and won't fit well on the counter.");
 } else if (storeBoxPerimeter === counterPerimeter) {
-    console.log("The box fits perfectly on the counter");
+    alert("Looks like your counterspace and the box we bought are the exact same size. They both have a perimeter of " + counterPerimeter + " inches. A perfect fit!");
+    console.log("Looks like your counterspace and the box we bought are the exact same size. They both have a perimeter of " + counterPerimeter + " inches. A perfect fit!");
 } else {
-    console.log("The box fits with room to spare");
+    alert("That is one gigantic counter.  Since the box we bought only has a perimeter of " + storeBoxPerimeter + " inches and your counter space has a perimeter of " + counterPerimeter + " inches, the box fits on the counter with " + boxSmaller + " inches to spare. Time to get a bigger box!");
+    console.log("That is one gigantic counter.  Since the box we bought only has a perimeter of " + storeBoxPerimeter + " inches and your counter space has a perimeter of " + counterPerimeter + " inches, the box fits on the counter with " + boxSmaller + " inches to spare. Time to get a bigger box!");
 }
