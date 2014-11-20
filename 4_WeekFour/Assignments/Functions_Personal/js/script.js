@@ -33,7 +33,7 @@ var herbBoxArea = function(width, length){
 
 //This is an anonymous function to calculate the perimeter of the herb box
 var herbBoxPerimeter = function(width, length){
-    var boxPerimeter = width * 2 + length * 2;
+    var boxPerimeter = (width * 2) + (length * 2);
     return boxPerimeter;
 }
 
