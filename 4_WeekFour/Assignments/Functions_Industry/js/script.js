@@ -6,16 +6,14 @@ alert("Each day, the three would gaze into Ye Olde Book of Tasks and see what th
 alert("On this particular day, there was an excessive amount of Tasks in the book. They would all be very busy.")
 
 
-var PasqualeTasks = prompt("Gaze in to Ye Olde Book of Tasks. How many tasks doth Pasquale have?\n\nPlease enter a large number.");
-var DarylTasks = prompt("and what does thou see in store for Sir Daryl?\n\nPlease enter a large number");
-var KadriTasks = prompt("Surely they will fail in battle against this foe.  How grim are things for the maiden, Kadri?\n\nPlease enter the largest number")
-/*
-calcArea(30, 20);
+var pasqualeTasks = prompt("Gaze in to Ye Olde Book of Tasks. How many tasks doth Pasquale have?\n\nPlease enter a large number.");
+var darylTasks = prompt("and what does thou see in store for Sir Daryl?\n\nPlease enter a large number");
+var kadriTasks = prompt("Surely they will fail in battle against this foe.  How grim are things for the maiden, Kadri?\n\nPlease enter the largest number")
 
-// Since 30 is the first argument, it's going to be stored in the "w" parameter. 20 will be stored in the "h" parameter
-function calcArea(pas, h){
-    var totalTasks = ;
-    console.log(area);
+
+function addTasks(pasqualeTasks, darylTasks, kadriTasks ){
+    var totalTasks = Number(pasqualeTasks) + Number(darylTasks) + Number(kadriTasks);
+    return totalTasks;
 }
 
-    */
+var allTasks = addTasks(pasqualeTasks, darylTasks, kadriTasks);
