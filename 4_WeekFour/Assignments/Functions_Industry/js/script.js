@@ -1,3 +1,2 @@
-/**
- * Created by OldPatman on 11/18/14.
- */
+/*  This is the JS file for Pasquale Palazzolo's Industry Expressions Calculator */
+
