@@ -31,7 +31,32 @@ var fivePlusTwo = prompt("What is the sum of 5 and 2?");
 if (Number(fivePlusTwo) === 7) {
     alert("Correct!");
 } else {
-    alert("INCORRECT! Abort Mission");
+    alert("INCORRECT!");
+}
+
+var sevenTimesNine = prompt("What is the product of 7 and 9?\n\n\"Product\" means multiply.");
+if (Number(sevenTimesNine)=== 63) {
+    alert("Correct!");
+} else {
+    alert("That is INCORRECT, Major Tom!");
+}
+
+var onePlusOne = prompt("What is 1 plus 1, Major Tom?");
+if (Number(onePlusOne)=== 2) {
+    alert("Correct!")
+} else {
+    alert("Are you kidding me, Major Tom?!?!  Abort Mission!");
     move();
 }
+
+//-------------------------------------------------------------
+
+if (Number(fivePlusTwo)=== 7 && Number(sevenTimesNine) === 63 && Number(onePlusOne) === 2) {
+    alert("Control is not convinced\nBut the computer has the evidence\nNo need to abort.")
+} else {
+    alert("You have failed at basic math skills, Major Tom.  There is need to abort. Abort Mission!");
+    move();
+}
+
+var countdownStart = prompt("There is one thing left to do.  Please choose a number between 4 and 1000");
 
