@@ -4,7 +4,7 @@ alert("Good morning, Major Tom.  I notice you're standing there alone.");
 var comeHome = prompt("Would you like to come home? Please enter \'y\' or \'n\'.");
 
 function move() {
-    window.location = 'http://youtu.be/0_O3wgiymXg';
+    window.location = 'http://youtu.be/0_O3wgiymXg?t=49s';
 }
 
 if (comeHome === "y"){
@@ -59,4 +59,22 @@ if (Number(fivePlusTwo)=== 7 && Number(sevenTimesNine) === 63 && Number(onePlusO
 }
 
 var countdownStart = prompt("There is one thing left to do.  Please choose a number between 4 and 1000");
+
+alert("The countdown starts...");
+
+
+
+while (countdownStart > 4) {
+    console.log("T-minus " + countdownStart);
+    countdownStart--;
+}
+
+alert("4...");
+alert("3...");
+alert("2...");
+alert("1...");
+alert(".............");
+move();
+
+
 
