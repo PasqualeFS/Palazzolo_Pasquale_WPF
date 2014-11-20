@@ -40,18 +40,24 @@ var herbBoxPerimeter = function(width, length){
 //The next two lines invoke both functions
 var storeBoxArea = herbBoxArea(4, 8);
 var storeBoxPerimeter = herbBoxPerimeter(4,8);
+
+//This calculates the perimeter of the box minus the perimeter of the counter
 var boxBigger = storeBoxPerimeter - counterPerimeter;
+
+//This calculates the perimeter of the counter minus the perimeter of the box
 var boxSmaller = counterPerimeter - storeBoxPerimeter;
 
+//This alert tells the user a little more detail about the box purchased for the herb garden
 alert("That box we bought for the herbs has a total area of " + storeBoxArea + " inches squared.\nWe calculated the perimeter of the box to be " + storeBoxPerimeter + " inches.");
 
+//This if else statement has three possible outcomes
 if (storeBoxPerimeter > counterPerimeter) {
-    alert("Since the box we bought has a perimeter of " + storeBoxPerimeter + " it exceeds the counterspace by " + boxBigger + " inches and won't fit well on the counter.");
-    console.log("Since the box we bought has a perimeter of " + storeBoxPerimeter + " it exceeds the counterspace by " + boxBigger + " inches and won't fit well on the counter.");
+    alert("Since the box we bought has a perimeter of " + storeBoxPerimeter + " it exceeds the counterspace by " + boxBigger + " inches and won't fit well on the counter."); //This alerts the user if the box is bigger than the counter
+    console.log("Since the box we bought has a perimeter of " + storeBoxPerimeter + " it exceeds the counterspace by " + boxBigger + " inches and won't fit well on the counter."); //This prints to the console if the box is bigger than the counter
 } else if (storeBoxPerimeter === counterPerimeter) {
-    alert("Looks like your counterspace and the box we bought are the exact same size. They both have a perimeter of " + counterPerimeter + " inches. A perfect fit!");
-    console.log("Looks like your counterspace and the box we bought are the exact same size. They both have a perimeter of " + counterPerimeter + " inches. A perfect fit!");
+    alert("Looks like your counterspace and the box we bought are the exact same size. They both have a perimeter of " + counterPerimeter + " inches. A perfect fit!"); //This alerts the user if the box is the same size as the counter
+    console.log("Looks like your counterspace and the box we bought are the exact same size. They both have a perimeter of " + counterPerimeter + " inches. A perfect fit!"); //This prints to the console if the box is the same size as the counter
 } else {
-    alert("That is one gigantic counter.  Since the box we bought only has a perimeter of " + storeBoxPerimeter + " inches and your counter space has a perimeter of " + counterPerimeter + " inches, the box fits on the counter with " + boxSmaller + " inches to spare. Time to get a bigger box!");
-    console.log("That is one gigantic counter.  Since the box we bought only has a perimeter of " + storeBoxPerimeter + " inches and your counter space has a perimeter of " + counterPerimeter + " inches, the box fits on the counter with " + boxSmaller + " inches to spare. Time to get a bigger box!");
+    alert("That is one gigantic counter.  Since the box we bought only has a perimeter of " + storeBoxPerimeter + " inches and your counter space has a perimeter of " + counterPerimeter + " inches, the box fits on the counter with " + boxSmaller + " inches to spare. Time to get a bigger box!");  //This alerts the user if the box is smaller than the counter
+    console.log("That is one gigantic counter.  Since the box we bought only has a perimeter of " + storeBoxPerimeter + " inches and your counter space has a perimeter of " + counterPerimeter + " inches, the box fits on the counter with " + boxSmaller + " inches to spare. Time to get a bigger box!");  //This prints to the console if the box is smaller than the counter
 }
