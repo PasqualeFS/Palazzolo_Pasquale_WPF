@@ -18,4 +18,5 @@ function addTasks(pasqualeTasks, darylTasks, kadriTasks ){
 
 var allTasks = addTasks(pasqualeTasks, darylTasks, kadriTasks);
 
-console.log(allTasks);
+alert("and as our story draws to a close, Pasquale, Daryl and Kadri sat staring into the endless abyss of " + allTasks + " tasks...\n\nand they did NOT live happily ever after.");
+console.log("and as our story draws to a close, Pasquale, Daryl and Kadri sat staring into the endless abyss of " + allTasks + " tasks...\n\nand they did NOT live happily ever after.");
