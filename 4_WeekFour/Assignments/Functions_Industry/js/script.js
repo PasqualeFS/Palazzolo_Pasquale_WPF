@@ -17,3 +17,5 @@ function addTasks(pasqualeTasks, darylTasks, kadriTasks ){
 }
 
 var allTasks = addTasks(pasqualeTasks, darylTasks, kadriTasks);
+
+console.log(allTasks);
