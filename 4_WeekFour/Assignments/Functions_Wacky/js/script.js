@@ -26,3 +26,12 @@ if (comeHome === "y"){
     move();
 }
 
+alert("First, all astronauts must pass a basic math test");
+var fivePlusTwo = prompt("What is the sum of 5 and 2?");
+if (Number(fivePlusTwo) === 7) {
+    alert("Correct!");
+} else {
+    alert("INCORRECT! Abort Mission");
+    move();
+}
+
